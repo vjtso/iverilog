@@ -43,7 +43,7 @@ First, the design itself:
       else
         deassign out;
   
-  endmodule // counter
+    endmodule // counter
   Then the simulation file:
 
     module test;
