@@ -5,17 +5,17 @@ Second, when creating a file to hold Verilog code, it is common to use the ".v" 
 
 So let us start. Given that you are going to use Icarus Verilog as part of your design process, the first thing to do as a designer is learn how to compile and execute even the most trivial design. For the purposes of simulation, we use as our example the most trivial simulation, a simple Hello, World program.
 
-  module main;
-    initial 
-      begin
-        $display("Hello, World");
-        $finish ;
-      end
-  endmodule
+    module main;
+      initial 
+        begin
+          $display("Hello, World");
+          $finish ;
+        end
+    endmodule
 
 Use a text editor to place the program in a text file, hello.v, then compile this program with the command:
 
-  % iverilog -o hello hello.v
+   % iverilog -o hello hello.v
 The results of this compile are placed into the file "hello", because the "-o" flag tells the compiler where to place the compiled result. Next, execute the compiled program like so:
 
   % vvp hello
