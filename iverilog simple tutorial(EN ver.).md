@@ -6,7 +6,7 @@ and th testbench file for simulation is named: hello_tb.v
 ###How to compile:
     % iverilog -o filename1 hello_tb.v hello.v
 
-Note：finlename1 is what you give to the file which is going to save the result of this compiling.
+Note：filename1 is what you give to the file which is going to save the result of this compiling.
 
 ###How to run:
     %vvp filename1
@@ -27,7 +27,7 @@ Note: "tb_module_name" is what you write in your "hello_tb.v" as the module name
 
 Then run this:
 
-    % gtkwave test.vcd &
+    % gtkwave wavefile.vcd &
 
 
 Done.
