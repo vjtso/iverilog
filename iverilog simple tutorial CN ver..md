@@ -13,6 +13,7 @@
 
 ###如何看波形：
 在你的testbench里的initial里加入两行dump，像这样：
+
     initial
      begin
         $dumpfile("波形文件名.vcd");
@@ -23,5 +24,6 @@
 你的hello_tb.v文件里面的module起得什么名字，就在$dumpvars里面写什么名字。
 
 然后运行下面这个命令：
+
     % gtkwave test.vcd &
 
