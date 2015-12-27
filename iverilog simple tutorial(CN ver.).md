@@ -25,5 +25,5 @@
 
 然后运行下面这个命令：
 
-    % gtkwave test.vcd &
+    % gtkwave 波形文件名.vcd &
 
