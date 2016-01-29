@@ -12,13 +12,15 @@
     %vvp 文件名1
 
 
-###如果是一个大project，有很多个文件module，可以写一个text file，
+###如果是一个大project
+如果是一个大project，有很多个文件module，可以写一个text file，
 比如 create a text file called "file_list.txt" with the files listed one per line:：
 
     counter.v
     counter_tb.v
 
 然后在命令行里这样写：
+
     iverilog -o my_design -c file_list.txt
     vvp my_design
 
